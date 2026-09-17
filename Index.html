@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Next Consultancy | Operations Improvement & Growth Plan</title>
+<meta name="description" content="A practical 90-day operations improvement framework covering student case management, follow-up, deadlines, SOPs, team accountability and management visibility. Prepared by Waqar Ahmad.">
+<meta property="og:title" content="Next Consultancy | Operations Improvement & Growth Plan">
+<meta property="og:description" content="A practical 90-day approach to improving visibility, accountability, follow-up and deadline control.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23121E2F'/><text x='50%' y='58%' dominant-baseline='middle' text-anchor='middle' font-family='Inter' font-weight='800' font-size='44' fill='white'>N</text></svg>">
+</head>
+<body>
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <div class="nav-brand">
+      <div class="brand-mark">N</div>
+      <div class="brand-text">
+        <span class="brand-name">NEXT CONSULTANCY</span>
+        <span class="brand-sub">Operations Plan • Proposed</span>
+      </div>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="#overview" class="nav-link">Overview</a>
+      <a href="#journey" class="nav-link">Student Journey</a>
+      <a href="#pipeline" class="nav-link">Lead Pipeline</a>
+      <a href="#deadlines" class="nav-link">Deadline Control</a>
+      <a href="#sops" class="nav-link">SOP System</a>
+      <a href="#team" class="nav-link">Team & KPIs</a>
+      <a href="#roadmap" class="nav-link">30 / 60 / 90</a>
+    </div>
+    <div class="nav-actions">
+      <button class="btn btn-ghost" id="presentationBtn" title="Toggle presentation mode">Presentation</button>
+      <button class="btn btn-ghost" onclick="window.print()">Print / PDF</button>
+      <a href="#closing" class="btn btn-primary">View Executive Summary</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="eyebrow"><span class="dot"></span> NEXT CONSULTANCY • FAISALABAD, PAKISTAN • PROPOSED OPERATING MODEL</div>
+        <h1 class="hero-title">Operations<br>Improvement &<br>Growth Plan</h1>
+        <p class="hero-sub">A practical 90-day approach to improving visibility, accountability, follow-up, deadline control and student-case management.</p>
+        <div class="hero-meta">
+          <span>Faisalabad, Pakistan</span><i>•</i><span>Operations Manager Interview</span><i>•</i><span>Prepared by Waqar Ahmad</span>
+        </div>
+        <div class="hero-philosophy">
+          <span>Understand</span><span class="arrow">→</span><span>Organize</span><span class="arrow">→</span><span>Track</span><span class="arrow">→</span><span>Measure</span><span class="arrow">→</span><span>Improve</span>
+        </div>
+        <div class="hero-actions">
+          <a href="#overview" class="btn btn-primary btn-lg">Explore the Plan</a>
+          <a href="#roadmap" class="btn btn-secondary btn-lg">View 90-Day Roadmap</a>
+        </div>
+        <p class="hero-note">Proposed approach • How I would approach the role • Illustrative operating model • Depending on existing process</p>
+      </div>
+      <div class="hero-visual">
+        <div class="control-card">
+          <div class="card-header">
+            <span class="pill">OPERATIONS CONTROL</span>
+            <span class="badge-demo">PROPOSED MODEL</span>
+          </div>
+          <div class="flow-mini">
+            <div class="flow-step"><div class="fs-label">UNDERSTAND</div><div class="fs-sub">Current workflow, tools, people</div></div>
+            <div class="flow-arrow">↓</div>
+            <div class="flow-step"><div class="fs-label">ORGANIZE</div><div class="fs-sub">People + process + data</div></div>
+            <div class="flow-arrow">↓</div>
+            <div class="flow-step"><div class="fs-label">TRACK</div><div class="fs-sub">Cases + actions + deadlines</div></div>
+            <div class="flow-arrow">↓</div>
+            <div class="flow-step"><div class="fs-label">MEASURE</div><div class="fs-sub">KPIs + bottlenecks</div></div>
+            <div class="flow-arrow">↓</div>
+            <div class="flow-step"><div class="fs-label">IMPROVE</div><div class="fs-sub">SOPs + accountability + follow-up</div></div>
+          </div>
+          <div class="status-list">
+            <div class="status-item"><span>Case Ownership</span><span class="status-pill ok">Clear</span></div>
+            <div class="status-item"><span>Next Action</span><span class="status-pill ok">Tracked</span></div>
+            <div class="status-item"><span>Deadlines</span><span class="status-pill ok">Visible</span></div>
+            <div class="status-item"><span>Documents</span><span class="status-pill ok">Controlled</span></div>
+            <div class="status-item"><span>Reporting</span><span class="status-pill ok">Scheduled</span></div>
+          </div>
+          <div class="principle">One case → One owner → One status → One next action → One deadline</div>
+        </div>
+        <div class="hero-decoration"></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section id="overview" class="section">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">01 • OPERATING PHILOSOPHY</div>
+      <h2>What I Would Focus On First</h2>
+      <p class="lead">I would first understand how the current office operates, what tools are already being used, how student cases are assigned and followed up, where delays occur, and what management currently needs visibility into. Improvements should strengthen the existing operation rather than create unnecessary complexity.</p>
+    </div>
+    <div class="grid-5">
+      <div class="card reveal"><div class="card-num">01</div><h3>Understand the current process</h3><p>Map people, departments, services, existing workflow and tools in use.</p></div>
+      <div class="card reveal"><div class="card-num">02</div><h3>Map the student journey</h3><p>From inquiry to referral, with ownership and handover points.</p></div>
+      <div class="card reveal"><div class="card-num">03</div><h3>Identify bottlenecks</h3><p>Where cases get stuck: documents, follow-up, university response, conditions.</p></div>
+      <div class="card reveal"><div class="card-num">04</div><h3>Create ownership & visibility</h3><p>Every active case gets status, owner, next action, deadline, last contact.</p></div>
+      <div class="card reveal"><div class="card-num">05</div><h3>Measure & improve</h3><p>Establish baseline, then fix the weakest stage — not everything at once.</p></div>
+    </div>
+    <div class="principle-banner reveal">
+      <span>Clarity over micromanagement</span><span>•</span><span>Accountability over blame</span><span>•</span><span>Data over assumptions</span><span>•</span><span>SOPs over memory</span><span>•</span><span>Early escalation over firefighting</span>
+    </div>
+  </div>
+</section>
+
+<section id="journey" class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">02 • STUDENT CASE JOURNEY</div>
+      <h2>Student Case Journey</h2>
+      <p class="lead">Every student should have a visible stage, responsible owner, next action and deadline.</p>
+    </div>
+    <div class="timeline-wrapper">
+      <div class="timeline" id="timeline">
+        <button class="tl-item active" data-stage="inquiry"><span class="tl-num">01</span><span>Inquiry</span></button>
+        <button class="tl-item" data-stage="counseling"><span class="tl-num">02</span><span>Counseling</span></button>
+        <button class="tl-item" data-stage="documents"><span class="tl-num">03</span><span>Document Collection</span></button>
+        <button class="tl-item" data-stage="shortlist"><span class="tl-num">04</span><span>Shortlisting</span></button>
+        <button class="tl-item" data-stage="application"><span class="tl-num">05</span><span>Application</span></button>
+        <button class="tl-item" data-stage="offer"><span class="tl-num">06</span><span>Offer / Conditions</span></button>
+        <button class="tl-item" data-stage="fee"><span class="tl-num">07</span><span>Fee / Deposit</span></button>
+        <button class="tl-item" data-stage="cas"><span class="tl-num">08</span><span>CAS</span></button>
+        <button class="tl-item" data-stage="visa"><span class="tl-num">09</span><span>Visa</span></button>
+        <button class="tl-item" data-stage="departure"><span class="tl-num">10</span><span>Departure</span></button>
+        <button class="tl-item" data-stage="referral"><span class="tl-num">11</span><span>Post-Departure</span></button>
+      </div>
+    </div>
+    <div class="journey-detail" id="journeyDetail">
+      <!-- JS injected -->
+    </div>
+    <div class="case-control-demo reveal">
+      <div class="case-header">
+        <div><span class="pill">CASE CONTROL</span> <span class="badge-demo">DEMO • ILLUSTRATIVE ONLY</span></div>
+        <button class="btn btn-secondary btn-sm" id="openCaseLogic">View Control Logic</button>
+      </div>
+      <div class="case-grid">
+        <div class="case-field"><label>Student</label><span>Demo Student A</span></div>
+        <div class="case-field"><label>Stage</label><span>Application</span></div>
+        <div class="case-field"><label>Owner</label><span>Assigned Case Officer</span></div>
+        <div class="case-field"><label>Status</label><span class="status-pill attn">In Progress</span></div>
+        <div class="case-field"><label>Next Action</label><span>Check missing document</span></div>
+        <div class="case-field"><label>Due</label><span>Demo Date</span></div>
+        <div class="case-field"><label>Priority</label><span class="status-pill warn">Attention</span></div>
+        <div class="case-field"><label>Last Contact</label><span>Demo Date</span></div>
+      </div>
+      <p class="micro">Actual student data, names and deadlines should never be exposed in a public demonstration. Real internal system would contain controlled access and company-approved records.</p>
+    </div>
+  </div>
+</section>
+
+<section id="pipeline" class="section">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">03 • LEAD PIPELINE</div>
+      <h2>Lead-to-Student Conversion Flow</h2>
+      <p class="lead"><span class="badge-demo">PROPOSED PIPELINE VIEW</span> No invented percentages. Measure current baseline first, then improve weakest stage.</p>
+    </div>
+    <div class="pipeline-grid">
+      <div class="pipeline-visual reveal">
+        <div class="funnel">
+          <div class="funnel-step"><span>New Inquiry</span><div class="fs">Capture source, contact, destination interest, next follow-up date.</div></div>
+          <div class="funnel-arrow">↓</div>
+          <div class="funnel-step"><span>Contacted</span><div class="fs">First response recorded, owner assigned.</div></div>
+          <div class="funnel-arrow">↓</div>
+          <div class="funnel-step"><span>Counseled</span><div class="fs">Academic + financial profile, destination/ intake discussion.</div></div>
+          <div class="funnel-arrow">↓</div>
+          <div class="funnel-step"><span>Qualified</span><div class="fs">Eligibility, budget, intake alignment checked.</div></div>
+          <div class="funnel-arrow">↓</div>
+          <div class="funnel-step"><span>Document Ready</span><div class="fs">Checklist complete, verification pending.</div></div>
+          <div class="funnel-arrow">↓</div>
+          <div class="funnel-step"><span>Application</span><div class="fs">Submitted, confirmation, status tracking.</div></div>
+          <div class="funnel-arrow">↓</div>
+          <div class="funnel-step"><span>Offer</span><div class="fs">Offer / conditional, conditions recorded.</div></div>
+          <div class="funnel-arrow">↓</div>
+          <div class="funnel-step"><span>Enrolment</span><div class="fs">Deposit/fee, CAS stage, visa handover, departure.</div></div>
+        </div>
+      </div>
+      <div class="pipeline-leak reveal">
+        <h3>Where pipeline leaks occur (proposed tracking)</h3>
+        <ul class="leak-list">
+          <li>Inquiry not contacted</li>
+          <li>Contacted but no counseling scheduled</li>
+          <li>Counseling completed but no follow-up</li>
+          <li>Student interested but documents incomplete</li>
+          <li>Shortlisted but application not submitted</li>
+          <li>Application submitted but status follow-up delayed</li>
+          <li>Offer received but conditions not cleared</li>
+          <li>Deposit/payment pending past deadline</li>
+          <li>CAS stage delayed due to missing requirements</li>
+          <li>Visa stage delayed</li>
+        </ul>
+        <div class="callout">Purpose is to find the <b>leak in the pipeline</b> and fix that stage first. First establish baseline, then set realistic targets based on actual data.</div>
+      </div>
+    </div>
+
+    <div class="followup-section" id="followup">
+      <h3 class="section-sub"><span class="eyebrow">FOLLOW-UP DISCIPLINE</span> Follow-Up Queue — <span class="badge-demo">DEMO / PROPOSED VIEW</span></h3>
+      <p>Many operational problems are not lack of effort but unclear ownership, forgotten follow-ups or missing next actions.</p>
+      <div class="table-responsive">
+        <table class="ops-table">
+          <thead><tr><th>Case</th><th>Type</th><th>Owner</th><th>Due</th><th>Status</th><th>Next Action</th></tr></thead>
+          <tbody>
+            <tr><td>Demo Student A</td><td>Offer Conditions</td><td>Assigned Officer</td><td>Demo Today</td><td><span class="status-pill warn">Attention</span></td><td>Confirm condition docs</td></tr>
+            <tr><td>Demo Student B</td><td>Missing Documents</td><td>Assigned Officer</td><td>Demo Tomorrow</td><td><span class="status-pill attn">Pending</span></td><td>Reminder + checklist</td></tr>
+            <tr><td>Demo Student C</td><td>University Application</td><td>Case Officer</td><td>Demo +2 days</td><td><span class="status-pill ok">In Progress</span></td><td>Status check</td></tr>
+            <tr><td>Demo Student D</td><td>CAS Stage</td><td>Case Officer</td><td>Demo Date</td><td><span class="status-pill danger">Attention</span></td><td>Verify outstanding reqs</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="deadlines" class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">04 • DEADLINE CONTROL</div>
+      <h2>Deadline Control</h2>
+      <p class="lead">Deadlines should be visible before they become emergencies.</p>
+    </div>
+    <div class="deadline-timeline reveal">
+      <div class="dt-item"><span>University Deadline</span></div>
+      <div class="dt-arrow">→</div>
+      <div class="dt-item"><span>Document Deadline</span></div>
+      <div class="dt-arrow">→</div>
+      <div class="dt-item"><span>Offer Conditions</span></div>
+      <div class="dt-arrow">→</div>
+      <div class="dt-item"><span>Deposit / Fee</span></div>
+      <div class="dt-arrow">→</div>
+      <div class="dt-item highlight"><span>CAS Deadline</span></div>
+      <div class="dt-arrow">→</div>
+      <div class="dt-item"><span>Visa Preparation</span></div>
+      <div class="dt-arrow">→</div>
+      <div class="dt-item"><span>Travel / Induction</span></div>
+    </div>
+    <div class="priority-grid reveal">
+      <div class="prio-card red"><div class="prio-head">RED — Critical</div><p>CAS deadline approaching • University deadline • Visa-related • Missing critical document</p></div>
+      <div class="prio-card amber"><div class="prio-head">AMBER — Needs action</div><p>Offer conditions • Deposit • Pending university response • Missing non-critical</p></div>
+      <div class="prio-card green"><div class="prio-head">GREEN — On track</div><p>No immediate action required</p></div>
+    </div>
+    <p class="micro">University and CAS dates vary by institution, intake, programme and applicant circumstances. I would maintain a verified deadline register rather than relying on generic dates. CAS deadlines can differ by university, intake, programme and applicant country, so operation should maintain university-specific register.</p>
+
+    <div class="deadline-board reveal">
+      <div class="board-head"><h3>Deadline Board — <span class="badge-demo">ILLUSTRATIVE DATA ONLY</span></h3></div>
+      <div class="table-responsive">
+        <table class="ops-table">
+          <thead><tr><th>Type</th><th>Case</th><th>Owner</th><th>Due</th><th>Status</th><th>Next Action</th></tr></thead>
+          <tbody>
+            <tr><td>University Application</td><td>Demo Case A</td><td>Case Officer</td><td>Demo Date</td><td><span class="status-pill warn">Approaching</span></td><td>Final document check</td></tr>
+            <tr><td>Offer Condition</td><td>Demo Case B</td><td>Counselor</td><td>Demo Date</td><td><span class="status-pill attn">Pending</span></td><td>Confirm condition</td></tr>
+            <tr><td>CAS Stage</td><td>Demo Case C</td><td>Case Officer</td><td>Demo Date</td><td><span class="status-pill danger">Attention</span></td><td>Verify outstanding requirements</td></tr>
+            <tr><td>Visa Stage</td><td>Demo Case D</td><td>Case Officer</td><td>Demo Date</td><td><span class="status-pill attn">Pending</span></td><td>Prepare handover</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="no-surprises reveal">
+      <h3>No Surprises Operations</h3>
+      <p>The objective is not to eliminate every problem. The objective is to make problems visible early enough to act.</p>
+      <div class="ns-flow">
+        <span>Hidden Problem</span><span class="ns-arrow">↓</span><span>Visible Status</span><span class="ns-arrow">↓</span><span>Assigned Owner</span><span class="ns-arrow">↓</span><span>Next Action</span><span class="ns-arrow">↓</span><span>Deadline</span><span class="ns-arrow">↓</span><span>Escalation if Needed</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="docs" class="section">
+  <div class="container">
+    <div class="grid-2">
+      <div class="reveal">
+        <div class="eyebrow">05 • DOCUMENT CONTROL</div>
+        <h2>Document Control</h2>
+        <p class="lead">Study-abroad operations involve many documents, versions and deadlines. Proposed approach:</p>
+        <ol class="ordered-list">
+          <li>Standard document checklist</li>
+          <li>Clear naming convention</li>
+          <li>Missing-document status</li>
+          <li>Verification before submission</li>
+          <li>Controlled storage</li>
+          <li>Backup & version control</li>
+          <li>Clear ownership</li>
+          <li>Record of submission</li>
+        </ol>
+        <div class="naming-card"><strong>Naming standard:</strong> <code>StudentName_DocumentType_Date_Version</code><br>Example: <code>AliKhan_Passport_2026-09.pdf</code><br><small>Proposed internal standard, depending on existing process.</small></div>
+      </div>
+      <div class="checklist-card reveal">
+        <div class="card-header"><span class="pill">DOCUMENT CHECKLIST</span><span class="badge-demo">DEMO CHECKLIST</span></div>
+        <div class="checklist">
+          <div class="cl-item"><span>Passport</span><span class="cl-status warn">Required / Pending</span></div>
+          <div class="cl-item"><span>Academic Transcript</span><span class="cl-status ok">Received</span></div>
+          <div class="cl-item"><span>Degree / Provisional Evidence</span><span class="cl-status attn">Received / Verify</span></div>
+          <div class="cl-item"><span>English Evidence</span><span class="cl-status muted">Case dependent</span></div>
+          <div class="cl-item"><span>Financial Documents</span><span class="cl-status muted">Case dependent</span></div>
+          <div class="cl-item"><span>University-Specific Documents</span><span class="cl-status muted">Case dependent</span></div>
+          <div class="cl-item"><span>Visa Documentation</span><span class="cl-status muted">Case dependent</span></div>
+        </div>
+        <p class="micro">Naming, storage and verification should be standardized after reviewing existing tools. No confidential data shown.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sops" class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">06 • SOP SYSTEM</div>
+      <h2>SOP System</h2>
+      <p class="lead">Standardize repeatable work without removing human judgment.</p>
+    </div>
+    <div class="sop-grid">
+      <button class="sop-card reveal" data-sop="01"><span class="sop-num">SOP 01</span><span>New Inquiry</span></button>
+      <button class="sop-card reveal" data-sop="02"><span class="sop-num">SOP 02</span><span>Counseling Handover</span></button>
+      <button class="sop-card reveal" data-sop="03"><span class="sop-num">SOP 03</span><span>Document Collection</span></button>
+      <button class="sop-card reveal" data-sop="04"><span class="sop-num">SOP 04</span><span>University Shortlisting</span></button>
+      <button class="sop-card reveal" data-sop="05"><span class="sop-num">SOP 05</span><span>Application Submission</span></button>
+      <button class="sop-card reveal" data-sop="06"><span class="sop-num">SOP 06</span><span>Offer & Conditions</span></button>
+      <button class="sop-card reveal" data-sop="07"><span class="sop-num">SOP 07</span><span>Fee / Deposit Follow-Up</span></button>
+      <button class="sop-card reveal" data-sop="08"><span class="sop-num">SOP 08</span><span>CAS Tracking</span></button>
+      <button class="sop-card reveal" data-sop="09"><span class="sop-num">SOP 09</span><span>Visa Handover</span></button>
+      <button class="sop-card reveal" data-sop="10"><span class="sop-num">SOP 10</span><span>Complaint / Escalation</span></button>
+      <button class="sop-card reveal" data-sop="11"><span class="sop-num">SOP 11</span><span>Pre-Departure</span></button>
+      <button class="sop-card reveal" data-sop="12"><span class="sop-num">SOP 12</span><span>Data Backup & File Control</span></button>
+    </div>
+    <div class="sop-framework reveal"><strong>Each SOP should answer:</strong> WHO → WHAT → WHEN → HOW → CHECK → ESCALATE</div>
+  </div>
+</section>
+
+<section id="team" class="section">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">07 • TEAM & ACCOUNTABILITY</div>
+      <h2>Team Accountability</h2>
+      <p class="lead">Accountability should be visible without becoming micromanagement.</p>
+    </div>
+    <div class="account-flow reveal">
+      <span>Task Assigned</span><span>→</span><span>Owner Confirmed</span><span>→</span><span>Deadline Set</span><span>→</span><span>Progress Tracked</span><span>→</span><span>Blocker Identified</span><span>→</span><span>Support / Escalation</span><span>→</span><span>Completion Verified</span>
+    </div>
+    <div class="team-grid">
+      <div class="team-card reveal"><h3>Admissions</h3><p>Case management and counseling. Owner of lead → counseling → relationship.</p><span class="badge-demo">Illustrative role</span></div>
+      <div class="team-card reveal"><h3>Application Team</h3><p>Applications and document control. Owner of docs → shortlist → submission → status.</p><span class="badge-demo">Illustrative role</span></div>
+      <div class="team-card reveal"><h3>Operations</h3><p>Tracking, reporting, coordination and process improvement. Connects functions.</p><span class="badge-demo">Illustrative role</span></div>
+    </div>
+    <p class="micro">Illustrative role structure. Actual responsibilities should be mapped after reviewing the company's current team structure.</p>
+
+    <div class="grid-2 mt">
+      <div class="card reveal"><h3>When Performance Drops</h3><p><strong>Understand Cause → Clarify Expectation → Provide Support → Set Measurable Target → Review Progress → Escalate According to Policy</strong></p><p>Possible causes: unclear expectations, training gap, workload imbalance, process problem, resource limitation, individual performance issue. Underperformance should first be understood rather than immediately treated as misconduct.</p></div>
+      <div class="card reveal"><h3>When Something Goes Wrong</h3><p><strong>Incident Response:</strong></p><ol class="ordered-list small"><li>Contain the impact</li><li>Understand what happened</li><li>Assess student/deadline impact</li><li>Communicate appropriately</li><li>Correct immediate issue</li><li>Document incident</li><li>Identify root cause</li><li>Improve process</li><li>Monitor recurrence</li></ol></div>
+    </div>
+
+    <div class="kpi-section">
+      <div class="section-head">
+        <h3>Management Visibility</h3>
+        <p class="lead">Measure what helps management make decisions.</p>
+      </div>
+      <div class="kpi-grid">
+        <div class="kpi-card"><span>New Inquiries</span><span class="kpi-val">TRACK</span></div>
+        <div class="kpi-card"><span>Active Cases</span><span class="kpi-val">REVIEW</span></div>
+        <div class="kpi-card"><span>Pending Documents</span><span class="kpi-val">TRACK</span></div>
+        <div class="kpi-card"><span>Applications</span><span class="kpi-val">TRACK</span></div>
+        <div class="kpi-card"><span>Offers</span><span class="kpi-val">TRACK</span></div>
+        <div class="kpi-card"><span>Cases Near Deadline</span><span class="kpi-val">REVIEW</span></div>
+        <div class="kpi-card"><span>Follow-Ups Due</span><span class="kpi-val">PROPOSED</span></div>
+        <div class="kpi-card"><span>Open Issues</span><span class="kpi-val">REVIEW</span></div>
+        <div class="kpi-card"><span>Staff Workload</span><span class="kpi-val">TRACK</span></div>
+        <div class="kpi-card"><span>Complaints / Escalations</span><span class="kpi-val">TRACK</span></div>
+      </div>
+      <div class="kpi-principle reveal"><strong>A KPI is useful when it leads to a management action.</strong> Metric → Trend → Problem → Action → Owner → Review</div>
+    </div>
+
+    <div class="rhythm-grid">
+      <div class="rhythm-card reveal"><h4>Daily Operating Rhythm</h4><ul><li><strong>Morning:</strong> Review urgent deadlines, follow-ups due, blocked cases, confirm priorities</li><li><strong>During Day:</strong> Monitor case movement, resolve blockers, support staff, verify submissions</li><li><strong>End of Day:</strong> Review incomplete critical tasks, confirm next actions, escalate unresolved</li></ul></div>
+      <div class="rhythm-card reveal"><h4>Weekly Management Review</h4><p><span class="badge-demo">Suggested structure</span></p><ol><li>Pipeline review</li><li>Pending documents</li><li>Applications and offers</li><li>Deadline risks</li><li>Follow-up completion</li><li>Team workload</li><li>Issues / complaints</li><li>Process improvements</li><li>Next week's priorities</li></ol></div>
+      <div class="rhythm-card reveal"><h4>Monthly Review</h4><ul><li>Lead sources, lead-to-student movement</li><li>Application activity, offer movement</li><li>Bottlenecks, staff workload</li><li>Complaints, recurring errors, SOP gaps</li><li>Process improvements</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section id="roadmap" class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">08 • 90 DAY PLAN</div>
+      <h2>My First 90 Days</h2>
+    </div>
+    <div class="roadmap-tabs">
+      <button class="tab active" data-tab="p1">Phase 01 • Days 1–30 • Understand & Map</button>
+      <button class="tab" data-tab="p2">Phase 02 • Days 31–60 • Organize & Control</button>
+      <button class="tab" data-tab="p3">Phase 03 • Days 61–90 • Measure & Improve</button>
+    </div>
+    <div class="roadmap-panels">
+      <div class="panel active" id="panel-p1">
+        <div class="panel-grid">
+          <div><h4>Objectives</h4><ul><li>Understand current operations</li><li>Meet team members, understand responsibilities</li><li>Review existing student journey</li><li>Review current tracking tools, reporting</li><li>Understand follow-up practices, deadline management</li><li>Identify bottlenecks & recurring issues</li><li>Avoid unnecessary changes before understanding system</li></ul></div>
+          <div><h4>Deliverable</h4><div class="deliverable">Current-State Operations Map</div><h4>Approach</h4><p>I would observe first, map ownership and urgent deadlines, present initial findings and agree priorities with management.</p></div>
+        </div>
+      </div>
+      <div class="panel" id="panel-p2">
+        <div class="panel-grid">
+          <div><h4>Objectives</h4><ul><li>Improve ownership visibility</li><li>Introduce / refine trackers</li><li>Improve follow-up discipline</li><li>Standardize important workflows</li><li>Create priority/deadline visibility</li><li>Build practical SOPs</li><li>Improve reporting, workload visibility</li><li>Introduce regular review rhythm</li></ul></div>
+          <div><h4>Deliverable</h4><div class="deliverable">Operational Control Framework</div><h4>Approach</h4><p>I would propose priority SOPs, follow-up system, deadline register, document standards, weekly KPI reporting.</p></div>
+        </div>
+      </div>
+      <div class="panel" id="panel-p3">
+        <div class="panel-grid">
+          <div><h4>Objectives</h4><ul><li>Review KPI trends, identify bottlenecks</li><li>Improve weak workflows</li><li>Refine SOPs, strengthen accountability</li><li>Improve management reporting</li><li>Document lessons learned</li><li>Establish continuous improvement cycle</li></ul></div>
+          <div><h4>Deliverable</h4><div class="deliverable">90-Day Operations Review + Improvement Roadmap</div><h4>Approach</h4><p>Analyze pipeline leakage, improve weak stages, recommend technology improvements based on actual needs — not assumptions.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="growth-section">
+      <div class="grid-2">
+        <div class="reveal">
+          <h3>Operations Should Support Growth</h3>
+          <p>Operational discipline can create a stronger foundation for sustainable growth.</p>
+          <div class="growth-flow">
+            <span>More Leads</span><span>↓</span><span>Better Qualification</span><span>↓</span><span>Faster Follow-Up</span><span>↓</span><span>Cleaner Documentation</span><span>↓</span><span>Better Case Tracking</span><span>↓</span><span>Fewer Missed Actions</span><span>↓</span><span>Better Student Experience</span><span>↓</span><span>More Successful Case Progression</span><span>↓</span><span>Potential Referrals</span>
+          </div>
+        </div>
+        <div class="reveal">
+          <h3>Technology Should Reduce Operational Friction</h3>
+          <p>I would first assess the tools already in use before recommending new software.</p>
+          <div class="tech-flow">
+            <span>Current tools</span><span>→</span><span>Understand</span><span>→</span><span>Improve usage</span><span>→</span><span>Standardize data</span><span>→</span><span>Automate repetitive tasks where appropriate</span><span>→</span><span>Measure impact</span>
+          </div>
+          <p><strong>Tools may include:</strong> Excel / Google Sheets, CRM, Email, WhatsApp, University portals, Document storage, Internal reporting.</p>
+          <div class="callout"><strong>Automation principle:</strong> Automate repetitive, rule-based work only after the underlying process is clear.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid-2">
+      <div class="reveal">
+        <div class="eyebrow">09 • COMMUNICATION</div>
+        <h2>WhatsApp + Central Record</h2>
+        <p>Potential channels may include: WhatsApp, Phone, Email, Walk-ins, Social media, Website, Referrals. But communication can happen across channels — operational record should have one reliable source of truth.</p>
+        <div class="comms-visual">
+          <div class="comms-sources"><span>WhatsApp</span><span>Phone</span><span>Email</span><span>Walk-in</span><span>Social</span><span>Website</span></div>
+          <div class="comms-arrow">↓</div>
+          <div class="comms-center">CENTRAL RECORD</div>
+          <div class="comms-arrow">↓</div>
+          <div class="comms-meta"><span>Owner</span><span>Status</span><span>Next Action</span><span>Deadline</span></div>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="eyebrow">10 • DATA DISCIPLINE</div>
+        <h3>Data Discipline</h3>
+        <div class="data-grid">
+          <div class="data-card"><strong>One student</strong><br>One reliable record</div>
+          <div class="data-card warn"><strong>Avoid</strong><br>Duplicate records, missing status, unknown ownership, outdated follow-up dates, unclear document versions</div>
+        </div>
+        <div class="data-flow">Capture → Validate → Update → Backup → Review</div>
+        <h4 class="mt">Escalation Should Be Clear</h4>
+        <div class="escalation">
+          <div class="esc"><span class="esc-pill ok">Normal</span><span>Handled within normal workflow</span></div>
+          <div class="esc"><span class="esc-pill warn">Attention</span><span>Needs closer monitoring</span></div>
+          <div class="esc"><span class="esc-pill danger">Urgent</span><span>Deadline / student impact requires immediate action</span></div>
+          <div class="esc"><span class="esc-pill">Escalate</span><span>Requires management or specialist decision. Cases requiring specialist, legal or regulated advice should be escalated to appropriately qualified person.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="report-sample reveal">
+      <div class="report-head"><h3>WEEKLY OPERATIONS REVIEW</h3><span class="badge-demo">SAMPLE REPORT STRUCTURE</span></div>
+      <div class="report-grid">
+        <div class="report-card"><h4>Pipeline</h4><p>New inquiries, movement by stage</p><span class="muted">TRACK</span></div>
+        <div class="report-card"><h4>Student Cases</h4><p>Active cases, ownership</p><span class="muted">REVIEW</span></div>
+        <div class="report-card"><h4>Deadlines</h4><p>Approaching, overdue, critical</p><span class="muted">REVIEW</span></div>
+        <div class="report-card"><h4>Documents</h4><p>Missing, pending verification</p><span class="muted">TRACK</span></div>
+        <div class="report-card"><h4>Applications / Offers</h4><p>Submitted, offers, conditions</p><span class="muted">TRACK</span></div>
+        <div class="report-card"><h4>Issues</h4><p>Complaints, escalations</p><span class="muted">REVIEW</span></div>
+        <div class="report-card"><h4>Team Workload</h4><p>Load balancing, overdue</p><span class="muted">TRACK</span></div>
+        <div class="report-card"><h4>Actions</h4><p>Next week's priorities</p><span class="muted">PROPOSED</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="eyebrow">11 • PRACTICAL SCENARIOS</div>
+    <h2>How I Would Handle a Bottleneck</h2>
+    <div class="scenario-grid">
+      <div class="scenario-card reveal">
+        <h3>Scenario 1: Documents arriving late, applications delayed</h3>
+        <button class="btn btn-secondary btn-sm toggle-scenario" data-target="sc1">Show My Approach</button>
+        <div class="scenario-body" id="sc1">
+          <ol><li>Identify affected cases</li><li>Determine missing documents</li><li>Assign case ownership</li><li>Record next follow-up</li><li>Set priority based on deadline/impact</li><li>Contact student</li><li>Monitor response</li><li>Escalate if blocked</li><li>Identify why issue is recurring</li><li>Improve document collection process</li></ol>
+        </div>
+      </div>
+      <div class="scenario-card reveal">
+        <h3>Scenario 2: Staff following up but management cannot see pending cases</h3>
+        <button class="btn btn-secondary btn-sm toggle-scenario" data-target="sc2">Show My Approach</button>
+        <div class="scenario-body" id="sc2">
+          <ul><li>Understand current tracking</li><li>Standardize status fields</li><li>Assign ownership</li><li>Add next-action field</li><li>Add follow-up date</li><li>Create management view</li><li>Review weekly</li><li>Improve based on actual usage</li></ul>
+        </div>
+      </div>
+      <div class="scenario-card reveal">
+        <h3>Scenario 3: Student/parent unhappy due to lack of clear update</h3>
+        <button class="btn btn-secondary btn-sm toggle-scenario" data-target="sc3">Show My Approach</button>
+        <div class="scenario-body" id="sc3">
+          <div class="approach-flow">Listen → Understand → Verify → Act → Communicate → Follow Up</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="questions-section reveal">
+      <h2>Before Changing Anything, I Would Ask</h2>
+      <div class="questions-grid">
+        <div>01 How are student cases currently tracked?</div>
+        <div>02 Which tools are currently used?</div>
+        <div>03 How are leads assigned?</div>
+        <div>04 How is follow-up recorded?</div>
+        <div>05 Where do cases most commonly get delayed?</div>
+        <div>06 How are deadlines monitored?</div>
+        <div>07 Who owns each stage of the student journey?</div>
+        <div>08 How does management currently receive reports?</div>
+        <div>09 What recurring complaints or operational issues exist?</div>
+        <div>10 What would management most like to improve in first 90 days?</div>
+      </div>
+    </div>
+
+    <div class="success-section reveal">
+      <h2>What Success Looks Like</h2>
+      <div class="success-grid">
+        <span>Clear ownership</span><span>Visible case status</span><span>Fewer forgotten follow-ups</span><span>Better deadline visibility</span><span>Cleaner documentation</span><span>More consistent workflows</span><span>Faster identification of bottlenecks</span><span>Better management visibility</span><span>Clearer accountability</span><span>Continuous improvement</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="closing" class="section closing">
+  <div class="container">
+    <div class="closing-card reveal">
+      <div class="eyebrow">FINAL PRINCIPLE</div>
+      <h2>The Operating Principle</h2>
+      <h3 class="big-statement">Make the work visible.<br>Make ownership clear.<br>Make deadlines impossible to ignore.<br>Make improvement continuous.</h3>
+      <p class="lead">My approach would be to first understand the existing operation, then create practical visibility and accountability around the work, measure where problems occur, and improve the process without adding unnecessary complexity.</p>
+      <div class="hero-philosophy large">
+        <span>Understand</span><span class="arrow">→</span><span>Organize</span><span class="arrow">→</span><span>Track</span><span class="arrow">→</span><span>Measure</span><span class="arrow">→</span><span>Improve</span>
+      </div>
+      <div class="closing-meta">
+        <div><strong>Prepared by</strong><br>Waqar Ahmad<br>BSCS Graduate<br>IT & Systems | MIS & Operations<br>Faisalabad, Pakistan</div>
+        <div class="closing-note">All dashboards, cases, names, dates and metrics shown on this website are illustrative unless explicitly identified otherwise. No confidential company data used. No invented statistics about Next Consultancy. Proposed approach only.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><strong>NEXT CONSULTANCY</strong><br>Operations Improvement & Growth Plan<br>Prepared for interview discussion.</div>
+      <div class="footer-small">All dashboards, cases, names, dates and metrics shown are illustrative unless explicitly identified otherwise. Website uses demo data only.<br>Built with HTML + CSS + Vanilla JS • No backend • Works on GitHub Pages • Print-friendly</div>
+    </div>
+  </div>
+</footer>
+
+<!-- MODALS -->
+<div class="modal" id="sopModal" aria-hidden="true">
+  <div class="modal-backdrop"></div>
+  <div class="modal-content">
+    <button class="modal-close" aria-label="Close">&times;</button>
+    <div id="sopModalBody"></div>
+  </div>
+</div>
+
+<div class="modal" id="caseModal" aria-hidden="true">
+  <div class="modal-backdrop"></div>
+  <div class="modal-content">
+    <button class="modal-close" aria-label="Close">&times;</button>
+    <h3>Case Control Logic</h3>
+    <p>Every case should answer:</p>
+    <ul>
+      <li><strong>WHO</strong> owns it?</li>
+      <li><strong>WHAT</strong> is its current status?</li>
+      <li><strong>WHAT</strong> happens next?</li>
+      <li><strong>WHEN</strong> is it due?</li>
+      <li><strong>WHAT</strong> is blocking it?</li>
+      <li><strong>WHEN</strong> was it last updated?</li>
+    </ul>
+    <div class="callout">If a case has no owner, no next action or no deadline, it is not truly being managed. This is a personal management principle, not a corporate slogan.</div>
+  </div>
+</div>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
